@@ -1,0 +1,44 @@
+
+
+
+.carrossel body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px; /* Adicionando um pouco de espaço nas bordas */
+    display: flex;
+    justify-content: center; /* Centraliza o carrossel na página */
+    
+}
+
+.carr{
+    position: relative;
+    width: 1200px; /* Definindo uma largura fixa */
+    height: 500px; /* Definindo uma altura fixa */
+    margin: auto;
+    overflow: hidden;
+    border: 5px solid rgb(38, 56, 92); /* Borda azul clara ao redor da caixa */
+    border-radius: 20px; /* Cantos arredondados */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Sombra para dar profundidade */
+}
+
+.mySlides {
+    display: none;
+    width: 100%;
+    height: 100%;
+}
+
+.ca img {
+    width: 100%;
+    height: 100%; /* Ajusta a altura da imagem para ocupar a caixa */
+    object-fit: cover; /* Mantém a proporção da imagem e corta o excesso, se necessário */
+    border-radius: 10px; /* Arredondando os cantos da imagem */
+}
+
+.fade {
+    animation: fade 1.5s ease-in-out;
+}
+
+@keyframes fade {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
